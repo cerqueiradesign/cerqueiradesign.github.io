@@ -123,7 +123,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
   flex-direction: column;
   justify-content: flex-end;
   padding: 20px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.3s ease;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 .illus-card::after {
   content: '';
@@ -134,8 +135,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
   z-index: 1;
 }
 .illus-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+  transform: translateY(-8px);
   z-index: 10;
 }
 .card-num {
@@ -188,13 +188,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.5s ease;
 }
 .card-img-wrap img.broken {
   display: none;
-}
-.illus-card:hover .card-img-wrap img {
-  transform: scale(1.06);
 }
 @media(max-width:900px) {
   .illus-grid { grid-template-columns: repeat(2, 1fr); padding: 0 20px; }
@@ -1031,10 +1027,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content
     </div>
     <div class="illus-card" style="background:#480ca8; color:#f0ede8;">
       <div class="card-num">18</div>
-      <div class="card-label">
-        <span class="card-sub">3D Scene</span>
-        <span class="card-title">Architecture Study</span>
-      </div>
+    
       <div class="card-img-wrap">
         <img src="img/calendario/Projeto_Calendário-18.png" data-real="img/3D/sintra1.png" alt="Architecture Study" loading="lazy" onerror="this.src=this.getAttribute('data-real')">
       </div>
